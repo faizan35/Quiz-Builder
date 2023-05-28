@@ -1,0 +1,27 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quick-links,
+.social-media,
+.contact-info,
+.newsletter {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
