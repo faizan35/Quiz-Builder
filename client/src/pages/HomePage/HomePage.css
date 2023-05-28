@@ -1,0 +1,54 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+}
+
+.navbar,
+.footer {
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.hero-section {
+  background-color: #f4f4f4;
+  padding: 5rem 0;
+  text-align: center;
+  flex: 1; /* Allows this section to grow and take up available space */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section button:first-child {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hero-section button:last-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.features-overview {
+  padding: 2rem;
+  background-color: #fff;
+  /* Add more styles as you add content to this section */
+}
