@@ -1,0 +1,22 @@
+{
+  "name": "quiz-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && nodemon server.js",
+    "start:both": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "client": "file:./client",
+    "server": "file:./server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "gh-pages": "^6.0.0"
+  }
+}
