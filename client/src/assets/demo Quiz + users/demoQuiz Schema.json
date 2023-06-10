@@ -1,0 +1,194 @@
+{
+  "quizId": "xxx01",
+  "quizName": "Basic Math Quiz",
+  "timeOfQuiz": 1,
+  "startTime": null,
+  "marksPerQuestion": 1,
+  "instructions": [
+    "Choose the best answer.",
+    "You have 15 minutes to complete this quiz."
+  ],
+  "result": 0,
+  "quiz": [
+    {
+      "questionId": "1001",
+      "questionText": "What is 2 + 3?",
+      "options": [
+        { "optionId": "1001A", "optionText": "4" },
+        { "optionId": "1001B", "optionText": "5" },
+        { "optionId": "1001C", "optionText": "6" },
+        { "optionId": "1001D", "optionText": "7" }
+      ],
+      "rightAns": "1001B",
+      "rightAnsStr": "5"
+    },
+    {
+      "questionId": "1002",
+      "questionText": "What is 4 - 2?",
+      "options": [
+        { "optionId": "1002A", "optionText": "2" },
+        { "optionId": "1002B", "optionText": "3" },
+        { "optionId": "1002C", "optionText": "4" },
+        { "optionId": "1002D", "optionText": "5" }
+      ],
+      "rightAns": "1002A",
+      "rightAnsStr": "2"
+    },
+    {
+      "questionId": "1003",
+      "questionText": "How many fingers do you have on one hand?",
+      "options": [
+        { "optionId": "1003A", "optionText": "4" },
+        { "optionId": "1003B", "optionText": "5" },
+        { "optionId": "1003C", "optionText": "6" },
+        { "optionId": "1003D", "optionText": "7" }
+      ],
+      "rightAns": "1003B",
+      "rightAnsStr": "5"
+    },
+    {
+      "questionId": "1004",
+      "questionText": "What is 6 divided by 2?",
+      "options": [
+        { "optionId": "1004A", "optionText": "2" },
+        { "optionId": "1004B", "optionText": "3" },
+        { "optionId": "1004C", "optionText": "4" },
+        { "optionId": "1004D", "optionText": "6" }
+      ],
+      "rightAns": "1004B",
+      "rightAnsStr": "3"
+    },
+    {
+      "questionId": "1005",
+      "questionText": "What comes after 9?",
+      "options": [
+        { "optionId": "1005A", "optionText": "8" },
+        { "optionId": "1005B", "optionText": "9" },
+        { "optionId": "1005C", "optionText": "10" },
+        { "optionId": "1005D", "optionText": "11" }
+      ],
+      "rightAns": "1005C",
+      "rightAnsStr": "10"
+    },
+    {
+      "questionId": "1006",
+      "questionText": "If you have 3 apples and give 1 to a friend, how many do you have left?",
+      "options": [
+        { "optionId": "1006A", "optionText": "0" },
+        { "optionId": "1006B", "optionText": "1" },
+        { "optionId": "1006C", "optionText": "2" },
+        { "optionId": "1006D", "optionText": "3" }
+      ],
+      "rightAns": "1006C",
+      "rightAnsStr": "2"
+    },
+    {
+      "questionId": "1007",
+      "questionText": "What is the sum of 2 and 2?",
+      "options": [
+        { "optionId": "1007A", "optionText": "2" },
+        { "optionId": "1007B", "optionText": "3" },
+        { "optionId": "1007C", "optionText": "4" },
+        { "optionId": "1007D", "optionText": "5" }
+      ],
+      "rightAns": "1007C",
+      "rightAnsStr": "4"
+    },
+    {
+      "questionId": "1008",
+      "questionText": "What is 10 minus 5?",
+      "options": [
+        { "optionId": "1008A", "optionText": "3" },
+        { "optionId": "1008B", "optionText": "4" },
+        { "optionId": "1008C", "optionText": "5" },
+        { "optionId": "1008D", "optionText": "6" }
+      ],
+      "rightAns": "1008C",
+      "rightAnsStr": "5"
+    },
+    {
+      "questionId": "1009",
+      "questionText": "How many sides does a triangle have?",
+      "options": [
+        { "optionId": "1009A", "optionText": "2" },
+        { "optionId": "1009B", "optionText": "3" },
+        { "optionId": "1009C", "optionText": "4" },
+        { "optionId": "1009D", "optionText": "5" }
+      ],
+      "rightAns": "1009B",
+      "rightAnsStr": "3"
+    },
+    {
+      "questionId": "1010",
+      "questionText": "What is the next number in the sequence: 1, 2, 3, 4, ___?",
+      "options": [
+        { "optionId": "1010A", "optionText": "4" },
+        { "optionId": "1010B", "optionText": "5" },
+        { "optionId": "1010C", "optionText": "6" },
+        { "optionId": "1010D", "optionText": "7" }
+      ],
+      "rightAns": "1010D",
+      "rightAnsStr": "7"
+    },
+    {
+      "questionId": "1011",
+      "questionText": "What is 9 multiplied by 3?",
+      "options": [
+        { "optionId": "1011A", "optionText": "24" },
+        { "optionId": "1011B", "optionText": "25" },
+        { "optionId": "1011C", "optionText": "26" },
+        { "optionId": "1011D", "optionText": "27" }
+      ],
+      "rightAns": "1011D",
+      "rightAnsStr": "27"
+    },
+    {
+      "questionId": "1012",
+      "questionText": "What is 7 plus 8?",
+      "options": [
+        { "optionId": "1012A", "optionText": "13" },
+        { "optionId": "1012B", "optionText": "14" },
+        { "optionId": "1012C", "optionText": "15" },
+        { "optionId": "1012D", "optionText": "16" }
+      ],
+      "rightAns": "1012B",
+      "rightAnsStr": "14"
+    },
+    {
+      "questionId": "1013",
+      "questionText": "How many months are in a year?",
+      "options": [
+        { "optionId": "1013A", "optionText": "10" },
+        { "optionId": "1013B", "optionText": "11" },
+        { "optionId": "1013C", "optionText": "12" },
+        { "optionId": "1013D", "optionText": "13" }
+      ],
+      "rightAns": "1013C",
+      "rightAnsStr": "12"
+    },
+    {
+      "questionId": "1014",
+      "questionText": "What is the capital of France?",
+      "options": [
+        { "optionId": "1014A", "optionText": "Madrid" },
+        { "optionId": "1014B", "optionText": "Berlin" },
+        { "optionId": "1014C", "optionText": "Rome" },
+        { "optionId": "1014D", "optionText": "Paris" }
+      ],
+      "rightAns": "1014D",
+      "rightAnsStr": "Paris"
+    },
+    {
+      "questionId": "1015",
+      "questionText": "How many sides does a square have?",
+      "options": [
+        { "optionId": "1015A", "optionText": "2" },
+        { "optionId": "1015B", "optionText": "3" },
+        { "optionId": "1015C", "optionText": "4" },
+        { "optionId": "1015D", "optionText": "5" }
+      ],
+      "rightAns": "1015C",
+      "rightAnsStr": "4"
+    }
+  ]
+}
