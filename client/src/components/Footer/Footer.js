@@ -1,21 +1,35 @@
 import React from "react";
 import "./Footer.css";
+import {
+  AiFillGoogleCircle,
+  AiFillGithub,
+  AiFillYoutube,
+  AiFillInstagram,
+} from "react-icons/ai";
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="quick-links">{/* Add your quick links here */}</div>
-      <div className="social-media">
-        {/* Add your social media icons here */}
+    <footer>
+      <div className="social-icons">
+        <AiFillGoogleCircle className="icon" />
+        <AiFillGithub className="icon" />
+        <AiFillYoutube className="icon" />
+        <AiFillInstagram className="icon" />
       </div>
+
       <div className="contact-info">
-        {/* Add your contact information here */}
+        Email: contact@yourdomain.com
+        <br />
+        Phone: +1 (123) 456-7890
       </div>
-      <div className="newsletter">
-        {/* Add your newsletter signup form here */}
+
+      <div className="rights">
+        Quickquiz
+        <br />
+        @all rights reserved
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

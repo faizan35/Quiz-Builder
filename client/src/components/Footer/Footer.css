@@ -1,27 +1,73 @@
-.footer {
-  background-color: #222;
+footer {
+  background-color: #3c3a33;
   color: #fff;
-  padding: 2rem;
+  padding: 20px 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  border-top: 3px solid #f5a623;
+  position: relative;
+  z-index: 1000;
 }
 
-.quick-links,
-.social-media,
-.contact-info,
-.newsletter {
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
-  margin: 1rem;
 }
 
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 1rem;
+footer .contact-info,
+footer .rights {
+  flex: 1;
+  text-align: center;
+  margin: 0.5rem 0;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+footer .icon {
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: color 0.3s, transform 0.5s;
+  color: #fff ; /* Default color for icons with priority   !important */
+}
+
+footer .icon:hover {
+  color: #f5a623;
+  transform: translateY(-5px) scale(1.1);
+  animation: waveEffect 0.5s infinite alternate;
+}
+
+@keyframes waveEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+footer .contact-info {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer .rights {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .social-icons {
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
