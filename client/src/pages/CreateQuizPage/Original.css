@@ -1,4 +1,4 @@
-.create-quiz-page {
+.create-quiz-page{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -20,7 +20,7 @@
 }
 
 h2 {
-  color: #000000;
+color: #000000;
   margin-top: 0;
   border-bottom: 2px solid #fff;
   padding-bottom: 0.5rem;

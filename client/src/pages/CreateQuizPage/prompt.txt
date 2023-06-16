@@ -1,0 +1,308 @@
+this is my CreateQuizPage code, now lets define handleUploadFileClick function, 
+i have a client\src\pages\UploadFilePage\UploadFilePage.js and its css file 
+client\src\pages\UploadFilePage\UploadFilePage.css , when the user clicks on "Upload File" button he 
+should be redirected to UploadFilePage.
+
+
+
+ok now lets write the content of UploadFilePage, 
+it would be a set of steps that guide the user how to generate quiz,
+it would be written same as,
+
+Step 1 > Upload you Quiz file. {Upload Button} it will olny allow to upload files in txt and windows word file format.
+
+Step 2 > Describe your Quiz format.
+"(Note :- All your questions and options should be in same format)"
+"Enter 1st Question = "{input field}
+Enter its all 4 options = 1.{input field} 2.{input field} 3.{input field} 4.{input field}
+which option is correct = {input field} // 1 to 4 
+
+Step 3 > Generate chatGPT Prompt {Button} // logic i will write later
+// after Generate chatGPT Prompt Button is clicked then only step 4 will appear 
+Step 4 > Copy your prompt from here. {Button} // saying "Copy Prompt" when clicked prompt will be copied
+// after "Copy Prompt" Button is clicked then only step 5 will appear 
+Step 5 > Goto chatGPT and paste your prompt {Buttom} // saying "chatGPT" when clicked it will redirect to gpt home pages
+// after "chatGPT" Button is clicked then only step 6 will appear 
+Step 6 > Paste the code what chatGPT gave you = {text-area}
+
+{Button} // saying "Done" which will redirect to AddEditQuestionPage
+==================>>> write the full updated UploadFilePage.
+[
+    {
+        "questionId": "1001",
+        "questionText": "Question 1",
+        "options": [
+            {
+                "optionId": "1001A",
+                "optionText": "option 1"
+            },
+            {
+                "optionId": "1001B",
+                "optionText": "option 2"
+            },
+            {
+                "optionId": "1001C",
+                "optionText": "Option 3"
+            },
+            {
+                "optionId": "1001D",
+                "optionText": "Option 4"
+            }
+        ],
+        "rightAns": "1",
+        "rightAnsStr": "option 1"
+    },
+    {
+        "questionId": "1002",
+        "questionText": "Question 2",
+        "options": [
+            {
+                "optionId": "1002A",
+                "optionText": "Option 1"
+            },
+            {
+                "optionId": "1002B",
+                "optionText": "Option 2"
+            },
+            {
+                "optionId": "1002C",
+                "optionText": "Option 3"
+            },
+            {
+                "optionId": "1002D",
+                "optionText": "Option 4"
+            }
+        ],
+        "rightAns": "2",
+        "rightAnsStr": "Option 2"
+    }
+]
+
+===================>>> and after question is recieved it will be passed to client\src\pages\AddEditQuestionPage\AddEditQuestionPage.js
+and behave as it would behave if it was entered manually in AddEditQuestionPage. AddEditQuestionPage code ===>>> 
+
+
+this is UploadFilePage.js code, i want to modify logic of generatePrompt function , let say "X" is the full text uploded file has, generate prompt ====>>> "This is my mcq quiz questions, options and their correct answer ===>> X ====>> Generate JSON format of this quiz, example of JSON format ====>> 
+
+
+-------------------------------------------------------------------
+
+
+ye wala upload page se aaya
+
+
+[
+    {
+        "questionId": "1001",
+        "questionText": "Which of the following is the correct way to allocate memory for an array in Java?",
+        "options": [
+            {
+                "optionId": "1001A",
+                "optionText": "int arr[5];"
+            },
+            {
+                "optionId": "1001B",
+                "optionText": "int arr[] = new int[5];"
+            },
+            {
+                "optionId": "1001C",
+                "optionText": "int arr()"
+            },
+            {
+                "optionId": "1001D",
+                "optionText": "int arr = new int[5];"
+            }
+        ],
+        "rightAns": "2",
+        "rightAnsStr": "int arr[] = new int[5];"
+    },
+    {
+        "questionId": "1002",
+        "questionText": "Which of these is a superclass of all exception classes in Java?",
+        "options": [
+            {
+                "optionId": "1002A",
+                "optionText": "Throwable"
+            },
+            {
+                "optionId": "1002B",
+                "optionText": "Error"
+            },
+            {
+                "optionId": "1002C",
+                "optionText": "Exception"
+            },
+            {
+                "optionId": "1002D",
+                "optionText": "RuntimeException"
+            }
+        ],
+        "rightAns": "1",
+        "rightAnsStr": "Throwable"
+    },
+    {
+        "questionId": "1003",
+        "questionText": "Which of the following is NOT a Java keyword?",
+        "options": [
+            {
+                "optionId": "1003A",
+                "optionText": "final"
+            },
+            {
+                "optionId": "1003B",
+                "optionText": "static"
+            },
+            {
+                "optionId": "1003C",
+                "optionText": "String"
+            },
+            {
+                "optionId": "1003D",
+                "optionText": "abstract"
+            }
+        ],
+        "rightAns": "3",
+        "rightAnsStr": "String"
+    },
+    {
+        "questionId": "1004",
+        "questionText": "In which package are the basic I/O classes like InputStream and OutputStream found?",
+        "options": [
+            {
+                "optionId": "1004A",
+                "optionText": "java.util"
+            },
+            {
+                "optionId": "1004B",
+                "optionText": "java.io"
+            },
+            {
+                "optionId": "1004C",
+                "optionText": "java.net"
+            },
+            {
+                "optionId": "1004D",
+                "optionText": "java.lang"
+            }
+        ],
+        "rightAns": "2",
+        "rightAnsStr": "java.io"
+    },
+    {
+        "questionId": "1005",
+        "questionText": "What will be the default value of the local variable of the data type 'boolean'?",
+        "options": [
+            {
+                "optionId": "1005A",
+                "optionText": "true"
+            },
+            {
+                "optionId": "1005B",
+                "optionText": "false"
+            },
+            {
+                "optionId": "1005C",
+                "optionText": "null"
+            },
+            {
+                "optionId": "1005D",
+                "optionText": "0"
+            }
+        ],
+        "rightAns": "2",
+        "rightAnsStr": "false"
+    }
+]
+
+
+
+
+
+
+------------
+
+
+[
+    {
+        "questionId": "1001",
+        "questionText": "werwe",
+        "options": [
+            {
+                "optionId": "1001A",
+                "optionText": "rewrwe"
+            },
+            {
+                "optionId": "1001B",
+                "optionText": "ewrewrew"
+            },
+            {
+                "optionId": "1001C",
+                "optionText": "rwerwe"
+            },
+            {
+                "optionId": "1001D",
+                "optionText": "rwerew"
+            }
+        ],
+        "rightAns": "3",
+        "rightAnsStr": "rwerwe"
+    },
+    {
+        "questionId": "1002",
+        "questionText": "rewrwe",
+        "options": [
+            {
+                "optionId": "1002A",
+                "optionText": "rewr"
+            },
+            {
+                "optionId": "1002B",
+                "optionText": "rwerwer"
+            },
+            {
+                "optionId": "1002C",
+                "optionText": "rwerwerwe"
+            },
+            {
+                "optionId": "1002D",
+                "optionText": "rwerwe"
+            }
+        ],
+        "rightAns": "3",
+        "rightAnsStr": "rwerwerwe"
+    }
+]
+
+
+
+=======================================================================================================================================
+
+
+
+in step 1 i want to know the total no f questions, add an input field which asks the user the total no of questions.
+i want to generate the prompt in step 3 (total no of questions divided by 5) times, only change in the prompt will be
+in the last line of the prompt " ===>> do not change the format and do not leave anything." there will be two dynamic variable 
+named "startFrom" and "tillHere". in the first prompt it will say startFrom=1 and tillHere=5, second prompt it will say startFrom=6 and 
+tillHere=10, and so on till the total no of question taken from the user in step 1, and suggest me also to make my prompt error prone
+so that i get the correct format so that i can paste it in and only left work will be to make all the questions object inside an array.
+
+
+
+
+
+add the button  in step 3 "Generate Prompt" in step 1, when pressed will take you to step 4, 
+so after step 1 there will be step 4, and correct the ordering of steps, 
+do not change anything do as much as i have told.
+
+
+
+
+
+i want to re-design this page, so that in "Step 1 - Upload your Quiz file"  i want to know the total no f questions, add an input field which asks the user the total no of questions and below it it will have the "Step 3 - Generate chatGPT Prompt" button here only "Generate Prompt", which when clicked will take the user to "Step 4 - Copy your prompt from here." So the total no of prompt will be  (total no of questions divided by 5) times , therefore total no of prompts will depend on the number of question , only change in each of the prompt will be
+in the last line of the prompt " ===>> do not change the format and do not leave anything." there will be two dynamic variable 
+named "startFrom" and "tillHere". in the first prompt it will say startFrom=1 and tillHere=5, second prompt it will say startFrom=6 and 
+tillHere=10, and so on till the total no of question taken from the user in step 1, and below every 
+ "Generate Prompt" button there will "Copy Prompt" button from "Step 4 - Copy your prompt from here" and a textarea form "Step 6 - Paste the code that chatGPT gave you" , means these three will be groped and increase or decrease in number as per total no of questions and outside these groupe on top "chatGPT" button will be there from "Step 5 - Go to chatGPT and paste your prompt" and below every thing a "Done" button from "Step 6 - Paste the code that chatGPT gave you". and add some checks in this function finalizeQuizCreation so that it is passing correct format of quiz data example of JSON format is given in "promptContent"  an array inside objects.       suggest me also to make my prompt error prone
+so that i get the correct format.
+
+
