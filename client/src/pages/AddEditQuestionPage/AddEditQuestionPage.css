@@ -1,0 +1,22 @@
+.add-edit-question-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question-block {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
