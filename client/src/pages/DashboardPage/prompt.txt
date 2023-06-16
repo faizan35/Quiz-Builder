@@ -1,0 +1,1 @@
+i want to redesign the page only the styling the functionalities are prefect do not mess it. So lets start, "taken-quiz" and "created-quiz" section will be left size of the screen with fixed window size, so that if its data increases it will scrollable, and next is , "quiz-info" section it will be on top of the screen 
