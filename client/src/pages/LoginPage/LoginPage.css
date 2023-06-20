@@ -1,22 +1,39 @@
+.login-page {
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Neutral background */
+}
+
 .login-container {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 70%; /* Reduced width for a more rectangular appearance */
+  max-width: 350px;
+  height: 450px; /* Increased height */
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.2), 10px 0 20px -10px rgba(0, 0, 0, 0.2); /* Shadows on the sides */
   border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for smooth effects */
+}
+
+.login-container:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: -15px 0 25px -10px rgba(0, 0, 0, 0.3), 15px 0 25px -10px rgba(0, 0, 0, 0.3); /* Enhanced shadows on hover */
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .message {
   color: red;
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .input-group {
@@ -26,6 +43,7 @@ h2 {
 label {
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 input {
@@ -33,6 +51,12 @@ input {
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
 button {
@@ -43,9 +67,31 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.login-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-links a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s, transform 0.3s;
+
+  &:hover {
+    color: #0056b3;
+    transform: translateY(-2px);
+  }
 }
