@@ -1,31 +1,46 @@
 .register-container {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%; /* Increased width */
+  max-width: 450px; /* Increased max-width */
+  margin: 5% auto; /* Added margin from top and bottom */
+  padding: 3rem;
+  padding-top: 4rem;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle side shadows */
   border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.register-container:hover {
+  transform: translateY(-5px);
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.15), 5px 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .message {
   color: red;
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .input-group {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 input {
@@ -33,6 +48,12 @@ input {
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
 button {
@@ -43,9 +64,38 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.login-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login-links a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s, transform 0.3s;
+
+  &:hover {
+    color: #0056b3;
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    width: 90%;
+  }
 }
