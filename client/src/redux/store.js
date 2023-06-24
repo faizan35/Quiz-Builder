@@ -1,18 +1,10 @@
-import { createStore, applyMiddleware, compose } from "redux";
-// Add your root reducer when ready
-// import rootReducer from './reducers';
+import { configureStore } from "@reduxjs/toolkit";
+import authReducer from "./slices/authSlice";
 
-const initialState = {};
-
-const middleware = [];
-
-const store = createStore(
-  // rootReducer,
-  initialState,
-  compose(
-    applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
-);
+const store = configureStore({
+  reducer: {
+    auth: authReducer,
+  },
+});
 
 export default store;
