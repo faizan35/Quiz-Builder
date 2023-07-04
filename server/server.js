@@ -1,20 +1,30 @@
 const express = require("express");
 const dotenv = require("dotenv");
-
 const connectDB = require("./config/db");
 const setMiddleware = require("./config/middleware");
+const userRoutes = require("./routes/user");
+const quizRoutes = require("./routes/quiz");
+const resultRoutes = require("./routes/result");
 
-const userRoutes = require("./routes/users/auth");
+// Initialize the main app
+const app = express();
 
 // Load environment variables
 dotenv.config();
 
-const app = express();
-
 // Set up middleware
 setMiddleware(app);
 
-app.use("/api/users", userRoutes);
+// Initialize the mini router for /api endpoint
+const apiRouter = express.Router();
+
+// Mount specific routes onto the mini router
+apiRouter.use("/users", userRoutes);
+apiRouter.use("/quiz", quizRoutes);
+apiRouter.use("/result", resultRoutes);
+
+// Mount the mini router onto the main app under /api endpoint
+app.use("/api", apiRouter);
 
 // Connect to MongoDB
 connectDB();
