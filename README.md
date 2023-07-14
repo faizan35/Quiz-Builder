@@ -14,7 +14,7 @@ This is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application f
   - [Backend](#backend)
   - [Frontend](#frontend)
   - [Environment Variables](#environment-variables)
-  - [Deployment](#deployment)
+  - [Take a Demo](#take-a-demo)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -38,37 +38,22 @@ This web application allows users to register, create quizzes, and take quizzes.
    git clone <repository-url>
    ```
 
-2. Install dependencies for the server:
+2. Install dependencies:
 
    ```bash
-   cd server
-   npm install
-   ```
-
-3. Install dependencies for the client:
-
-   ```bash
-   cd client
+   cd Quiz-Builder
    npm install
    ```
 
 ## Usage
 
-1. Start the server:
+1. Start the server & client together:
 
    ```bash
-   cd server
-   npm run start:server
+   npm run start:both
    ```
 
-2. Start the client:
-
-   ```bash
-   cd client
-   npm run start:client
-   ```
-
-3. Access the application at [http://localhost:3000](http://localhost:3000).
+2. Access the application at [http://localhost:3000](http://localhost:3000).
 
 ## Folder Structure
 
@@ -94,14 +79,9 @@ Create a `.env` file in the `server` directory with the following content:
     JWT_SECRET=fgfhcx34h$$%
     ```
 
-## Deployment
+## Take a Demo
 
-To deploy the client to GitHub Pages:
-
-    ```bash
-    cd client
-    npm run deploy
-    ```
+To create `Take a Demo` page to work you have to add Demo data to the database from `demoQuiz-Schema.json` located at `client\src\assets\demo Quiz+users\demoQuiz-Schema.json`.
 
 ## Contributing
 
