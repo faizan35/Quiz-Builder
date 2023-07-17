@@ -74,10 +74,10 @@ The project is structured into server and client folders. The server handles bac
 
 Create a `.env` file in the `server` directory with the following content:
 
-    ```env
-    MONGO_URI=mongodb://127.0.0.1:27017/QuizApp
-    JWT_SECRET=fgfhcx34h$$%
-    ```
+```env
+MONGO_URI=mongodb://127.0.0.1:27017/QuizApp
+JWT_SECRET=fgfhcx34h$$%
+```
 
 ## Take a Demo
 
