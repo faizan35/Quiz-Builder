@@ -2,7 +2,7 @@
 
 This is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application for creating and taking quizzes.
 
-![homepage](client\src\assets\images\homepage.png)
+![homepage](./client/src/assets/images/homepage.png)
 
 ## Table of Contents
 
